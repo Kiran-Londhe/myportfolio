@@ -281,6 +281,19 @@ line-height: 1.2;
     box-shadow: 0 8px 16px rgba(0, 117, 190, 0.5); /* Blue for MySQL */
 }
 
+.services-box.angular-box 
+{
+    box-shadow: 0 8px 16px rgba(221, 27, 37, 0.5); /* Red for Angular */
+}
+
+.services-box.csharp-box 
+{
+    box-shadow: 0 8px 16px rgba(106, 0, 175, 0.5); /* Purple for C# */
+}
+
+
+
+
 .services-container .services-box
 {
     flex: 1 1 30rem;
