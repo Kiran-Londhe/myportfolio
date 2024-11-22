@@ -12,6 +12,22 @@
     <!--MAIN CSS-->
     <link rel="stylesheet" href="portfolio.css">
     <title>Personal Portfolio</title>
+    <style>
+        #chatbot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+        }
+
+        #chatbot iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,6 +68,11 @@
         </div>
     </section>
 
+    <!-- Add the Chatbot iframe -->
+    <div id="chatbot">
+        <iframe src="https://kiran-londhe.github.io/chatbot_main/Collapsible"></iframe>
+    </div>
+
     <!--ABOUT SECTION DESIGN-->
     <section class="about" id="about">
         <div class="about-img">
@@ -68,86 +89,11 @@
         </div>
     </section>
 
-    <!-- Add the Chatbot iframe and fixed functionality -->
-    <div id="chatbot" style="position: fixed; bottom: 20px; right: 20px; width: 371.2px; height: 551.2px; z-index: 9999;">
-        <iframe src="https://kiran-londhe.github.io/chatbot_main/Collapsible" style="width: 100%; height: 100%; border: none;"></iframe>
-    </div>
+    <!-- Additional content here -->
 
     <script>
-        window.onscroll = function() {
-            var chatbot = document.getElementById('chatbot');
-            if (window.scrollY > 100) {
-                // When the user scrolls down 100px, it will stay fixed
-                chatbot.style.position = 'fixed';
-                chatbot.style.bottom = '20px';
-                chatbot.style.right = '20px';
-            } else {
-                // If the scroll position is at the top, keep it in its place (you can adjust this)
-                chatbot.style.position = 'absolute';
-                chatbot.style.bottom = 'auto';
-                chatbot.style.right = 'auto';
-            }
-        }
+        // Add additional functionality for dynamic features if required
     </script>
-
-    <!--SERVICES SECTION DESIGN-->
-    <section class="services" id="services">
-        <h2 class="heading">In <span>Experience</span></h2>
-        <center><h2>These are the technologies I've worked with</h2></center>
-
-        <div class="services-container">
-            <!-- Example content for services -->
-            <div class="services-box java-box">
-                <img src="https://example.com/java-logo.png" alt="Java Development" class="logo-shadow java-logo" style="width: 100px; height: auto;">
-            </div>
-            <!-- More services here -->
-        </div>
-    </section>
-
-    <!--PORTFOLIO SECTION DESIGN-->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        <!-- Portfolio items here -->
-    </section>
-
-    <!--CONTACT SECTION DESIGN-->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="008a5d05-a74a-4cac-9239-3d0c8adb4b01">
-            <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="input-box">
-                <input type="number" name="mobile" placeholder="Mobile Number" required>
-                <input type="text" name="subject" placeholder="Email Subject" required>
-            </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!--FOOTER DESIGN-->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by @kiranlondhe | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fas fa-angle-up"></i></a>
-        </div>
-    </footer>
-
-    <!-- SSCRIPT REVEAL JS-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- SSCRIPT REVEAL JS-->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- MAIN JS-->
-    <script src="portfolio.js"></script>
-
 </body>
 
 </html>
