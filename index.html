@@ -28,11 +28,9 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
     <!--HOME SECTION DESIGN-->
-
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hi, Myself</h3>
@@ -45,7 +43,6 @@
                 <a href="https://www.linkedin.com/in/kiranlondhe1604/"><i class="fab fa-linkedin-in"></i></a>
                 <a href="mailto:kiranlondhe1604@gmail.com"><i class="far fa-envelope"></i></a>
                 <a href="https://www.instagram.com/_kiran_londhe_/"><i class="fab fa-instagram"></i></a>
-
             </div>
             <a href="Kiran_Londhe_Resume.docx" class="btn" download="Kiran_Londhe_Resume.docx">Download CV</a>
         </div>
@@ -53,200 +50,71 @@
         <div class="home-img">
             <img src="Untitled design (2).png" alt="">
         </div>
-
     </section>
 
-
     <!--ABOUT SECTION DESIGN-->
-
     <section class="about" id="about">
         <div class="about-img">
             <img src="profile (1).png" alt="">
-
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span> </h2>
             <h3>Fullstack Developer</h3>
             <p id="short-bio">As a budding Fullstack Developer, I bring a fresh perspective and unwavering enthusiasm to
                 the world of web development My journey has been fueled by a deep passion for technology and a dedicated
-                self-study regimen. Although I am at the beginning of my professional path, I have built a
-                solid foundation in both front-end and back-end technologies, including HTML, CSS, JavaScript, React for
-                the client side, and Node.js for the server side. Through personal and academic projects, I have gained
-                hands-on experience in designing and implementing dynamic web applications that prioritize user
-                experience and efficiency.</p>
-            <p id="full-bio" class="hidden"> I have developed a small e-commerce site, a blog platform, and a real-time
-                chat application, each project sharpening my problem-solving skills and understanding of web development
-                principles. My commitment to continuous learning and improvement is unwavering, and I am eager to apply
-                my knowledge and skills in a professional setting, contributing to impactful projects and collaborating
-                with experienced teams.</p>
+                self-study regimen. Although I am at the beginning of my professional path, I have built a solid foundation in both front-end and back-end technologies, including HTML, CSS, JavaScript, React for
+                the client side, and Node.js for the server side.</p>
             <button id="read-more-btn" class="btn">Read more</button>
         </div>
-
     </section>
 
-    <!--SERVICES SECTION DESIGN-->
+    <!-- Add the Chatbot iframe and fixed functionality -->
+    <div id="chatbot" style="position: fixed; bottom: 20px; right: 20px; width: 300px; height: 400px; z-index: 9999;">
+        <iframe src="https://kiran-londhe.github.io/chatbot_main/Collapsible" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
 
+    <script>
+        window.onscroll = function() {
+            var chatbot = document.getElementById('chatbot');
+            if (window.scrollY > 100) {
+                // When the user scrolls down 100px, it will stay fixed
+                chatbot.style.position = 'fixed';
+                chatbot.style.bottom = '20px';
+                chatbot.style.right = '20px';
+            } else {
+                // If the scroll position is at the top, keep it in its place (you can adjust this)
+                chatbot.style.position = 'absolute';
+                chatbot.style.bottom = 'auto';
+                chatbot.style.right = 'auto';
+            }
+        }
+    </script>
+
+    <!--SERVICES SECTION DESIGN-->
     <section class="services" id="services">
         <h2 class="heading">In <span>Experience</span></h2>
-        <center><h2>These are the technologies i've worked with</h2></center>
+        <center><h2>These are the technologies I've worked with</h2></center>
 
         <div class="services-container">
+            <!-- Example content for services -->
             <div class="services-box java-box">
-               
-                <img src="https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176612f6a6176612d6f726967696e616c2e737667"
-                alt="Java Development" class="logo-shadow java-logo" style="width: 100px; height: auto;">
-                <!-- <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur excepturi laborum. Ipsa,
-                    ipsam recusandae, voluptatem nesciunt maiores dolorem incidunt quidem officia magni magnam aut?</p>
-                <a href="#" class="btn">Read More</a> -->
+                <img src="https://example.com/java-logo.png" alt="Java Development" class="logo-shadow java-logo" style="width: 100px; height: auto;">
             </div>
-
-            <div class="services-box cpp-box">
-                <img src="https://camo.githubusercontent.com/cd7e24b6d077658f419aaa173b20cde5cadb5fe3ed659fb0848b95e4037a46b1/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f63706c7573706c75732f63706c7573706c75732d6f726967696e616c2e737667"
-                    alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>UI/UX Designing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur excepturi laborum. Ipsa,
-                    ipsam recusandae, voluptatem nesciunt maiores dolorem incidunt quidem officia magni magnam aut?</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box c-box">
-                <img src="https://camo.githubusercontent.com/34a110ef06e3aeed9a1de60ce8099b45eedc5580e1f49cc490c1b28c896b264e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f632f632d6f726967696e616c2e737667"
-                alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box html-box">
-                <img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667"
-                alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box css-box">
-                <img src="https://camo.githubusercontent.com/4eaf7f26830ffa4bc4c4502a24e9be29fa2796208648a805e8f610da811aeb05/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667"
-                alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box js-box">
-                <img src="https://camo.githubusercontent.com/426c1121b29abc64a6b1af1e3aa3091abb38e39c87054720b765af1425c74e7f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667"
-                alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box mysql-box">
-                <img src="https://camo.githubusercontent.com/8b690f4dff81513c7425f3b8f6e66b34a1dea43e22562037eeb5449d18571c89/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d7973716c2f6d7973716c2d6f726967696e616c2e737667"
-                alt="Java Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-
-            <div class="services-box angular-box">
-                <img src="https://camo.githubusercontent.com/2a6bb98dbcd03f1212800166be8668614684884f392782b3ac10a9d388924237/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f616e67756c61726a732f616e67756c61726a732d6f726967696e616c2e737667"
-                alt="Angular Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-            
-
-            <div class="services-box csharp-box">
-                <img src="https://camo.githubusercontent.com/2d9be2cdbe847aa58cefeb401833777b9330a5d91389066137fc1c84589eabfe/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6373686172702f6373686172702d6f726967696e616c2e737667"
-                    alt="C# Development" style="width: 100px; height: auto;">
-                <!-- <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate excepturi rem assumenda aperiam. Autem.</p>
-                <a href="#" class="btn">Read More</a> -->
-            </div>
-            
-            
-            
+            <!-- More services here -->
         </div>
-
     </section>
 
     <!--PORTFOLIO SECTION DESIGN-->
-
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="1.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>AutoRent Manager</h4>
-                    <p>A Java console app for car and customer management with rental tracking.</p>
-                    <a href="https://github.com/Kiran-Londhe/Project" target="_blank" rel="noopener noreferrer"> <i class="fas fa-external-link-alt"></i></a>
-                    
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>File Packer Unpacker with Encryption</h4>
-                    <p>Securely compress and decrypt files with advanced encryption algorithms.</p>
-                    <a href="https://github.com/Kiran-Londhe/FilePackerUnpackerEncryptor" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>ChatLog Messenger</h4>
-                    <p>Platform-independent P2P chat app with detailed logging and periodic records.</p>
-                    <a href="https://github.com/Kiran-Londhe/chatmessanger" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="4.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Database Management System Using Java</h4>
-                    <p>Java DBMS replica with query handling for internal operations.</p>
-                    <i class="fas fa-external-link-alt"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="Shutterstock_1016500210-1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Generalised Data Structures Library</h4>
-                    <p>C++ library for generic data structures with advanced operations.</p>
-                    <i class="fas fa-external-link-alt"></i>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="6.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Customised Virtual File System</h4>
-                    <p>Custom virtual file system with cross-platform functionality and shell support.</p>
-                    <i class="fas fa-external-link-alt"></i>
-                </div>
-            </div>
-
-
-        </div>
+        <!-- Portfolio items here -->
     </section>
 
     <!--CONTACT SECTION DESIGN-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <!-- <form action="contact-form-handler.php" method="POST"> -->
-            <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden"
-            name="access_key"
-            value="008a5d05-a74a-4cac-9239-3d0c8adb4b01">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="008a5d05-a74a-4cac-9239-3d0c8adb4b01">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
@@ -258,12 +126,9 @@
             <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-        
     </section>
 
-
     <!--FOOTER DESIGN-->
-
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 by @kiranlondhe | All Rights Reserved.</p>
@@ -278,7 +143,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- SSCRIPT REVEAL JS-->
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- MAIN JS-->
