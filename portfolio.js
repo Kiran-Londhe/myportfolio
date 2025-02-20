@@ -62,7 +62,7 @@ window.onscroll = () =>
         /* ************************* typed js **************************** */
 
         const typed = new Typed('.multiple-text', {
-            strings: ['Full Stack Java Developer'],
+            strings: ['Full Stack Java Developer', 'Web Developer'],
             typeSpeed: 70,
             backSpeed: 70,
             backDelay: 100,
