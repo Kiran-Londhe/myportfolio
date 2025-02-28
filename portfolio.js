@@ -80,4 +80,17 @@ window.onscroll = () =>
                 readMoreBtn.innerText = "Read more";
             }
         });
+
+
+ // Preloader JS
+       window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+
+        // Ensure the preloader stays for a short time
+        setTimeout(() => {
+            preloader.style.display = "none"; // Hide the preloader
+            document.body.classList.add("fade-in"); // Add fade-in effect to body
+        }, 2000); // 2000ms = 2 seconds
+    });
+        
         
