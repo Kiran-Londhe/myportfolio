@@ -184,6 +184,7 @@ cursor: default;
 .btn:hover
 {
     box-shadow: none;
+cursor: default;
 }
 
 .about
