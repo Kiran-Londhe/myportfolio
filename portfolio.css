@@ -756,7 +756,7 @@ line-height: 1.2;
     height: 600px;
     z-index: 9999;
     border: none;
-    border-radius: 10px;
+    outline: none;
     overflow: hidden;
     
 backgroud: transparent;
