@@ -747,5 +747,26 @@ line-height: 1.2;
             body.fade-in {
                 opacity: 100%;
             }
+
+#fixed-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 600px;
+    z-index: 9999;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: white;
+}
+
+#fixed-chatbot iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
    
 
