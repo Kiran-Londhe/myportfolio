@@ -752,6 +752,8 @@ line-height: 1.2;
     position: fixed;
     bottom: 20px;
     right: 20px;
+width: 400px;
+    height: 600px;
     z-index: 9999;
    border: none; /* Ensures there's no border around the chatbot */
     outline: none; /* Ensures there's no outline */
