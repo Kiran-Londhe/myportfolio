@@ -91,6 +91,11 @@ window.onscroll = () =>
             preloader.style.display = "none"; // Hide the preloader
             document.body.classList.add("fade-in"); // Add fade-in effect to body
         }, 2000); // 2000ms = 2 seconds
+
+document.getElementById('close-chatbot').addEventListener('click', function () {
+    document.getElementById('fixed-chatbot').style.display = 'none';
+});
+
     });
         
         
