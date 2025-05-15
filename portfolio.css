@@ -755,11 +755,10 @@ line-height: 1.2;
     width: 400px;
     height: 600px;
     z-index: 9999;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: none; /* Ensures there's no border around the chatbot */
+    outline: none; /* Ensures there's no outline */
     overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: transparent; /* Fix typo and set background to transparent */
    
 }
 
